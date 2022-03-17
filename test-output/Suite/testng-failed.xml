@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="2" name="Test-Runner chrome(failed)" parallel="tests">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.crm.OrganizationTests.CreateOrgWithIndTypeTest">
+        <methods>
+          <include name="connectDatabase"/>
+          <include name="closeBrowser"/>
+          <include name="logout"/>
+          <include name="createSample"/>
+          <include name="closeDb"/>
+          <include name="createOrgwithIndType"/>
+          <include name="launchTheBrowser"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- com.crm.OrganizationTests.CreateOrgWithIndTypeTest -->
+      <class name="com.crm.OrganizationTests.CreateOrg1Test">
+        <methods>
+          <include name="connectDatabase"/>
+          <include name="closeBrowser"/>
+          <include name="logout"/>
+          <include name="closeDb"/>
+          <include name="launchTheBrowser"/>
+          <include name="login"/>
+          <include name="createorg"/>
+        </methods>
+      </class> <!-- com.crm.OrganizationTests.CreateOrg1Test -->
+    </classes>
+  </test> <!-- Test-Runner chrome(failed) -->
+  <test thread-count="2" name="Test-Runner Firefox(failed)" parallel="tests">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="com.crm.OrganizationTests.CreateOrgWithIndTypeTest">
+        <methods>
+          <include name="connectDatabase"/>
+          <include name="closeBrowser"/>
+          <include name="logout"/>
+          <include name="createSample"/>
+          <include name="closeDb"/>
+          <include name="createOrgwithIndType"/>
+          <include name="launchTheBrowser"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- com.crm.OrganizationTests.CreateOrgWithIndTypeTest -->
+      <class name="com.crm.OrganizationTests.CreateOrg1Test">
+        <methods>
+          <include name="connectDatabase"/>
+          <include name="closeBrowser"/>
+          <include name="logout"/>
+          <include name="closeDb"/>
+          <include name="launchTheBrowser"/>
+          <include name="login"/>
+          <include name="createorg"/>
+        </methods>
+      </class> <!-- com.crm.OrganizationTests.CreateOrg1Test -->
+    </classes>
+  </test> <!-- Test-Runner Firefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->
